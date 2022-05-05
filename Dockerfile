@@ -1,7 +1,7 @@
-FROM alpine:3.15.4
+FROM python:3.6-alpine
 
 RUN apk add --no-cache \
-	graphviz python3 py-pip
+	graphviz 
 
 ADD requirements.txt ./
 RUN pip3 install -r requirements.txt
